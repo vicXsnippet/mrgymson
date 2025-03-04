@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/dashboard_color"
+  tools:context=".ui.formwelcome.FormWelcomeActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_form_login"
+    android:paddingStart="50dp"
+    android:paddingTop="30dp"
+    android:paddingEnd="50dp"
+    android:paddingBottom="100dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/tv_hint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="@font/roboto_bold"
+      android:text="Masukkan tinggi dan \n berat badan anda"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/et_tinggi_badan"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:layout_marginTop="50dp"
+      android:background="@drawable/bg_edit_text"
+      android:fontFamily="@font/roboto_bold"
+      android:hint="Tinggi badan (cm)"
+      android:inputType="number"
+      android:padding="15dp"
+      android:textColorHint="#555555"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_hint" />
+
+    <EditText
+      android:id="@+id/et_berat_badan"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:layout_marginTop="40dp"
+      android:background="@drawable/bg_edit_text"
+      android:fontFamily="@font/roboto_bold"
+      android:hint="Berat badan(kg)"
+      android:inputType="number"
+      android:padding="15dp"
+      android:textColorHint="#555555"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/et_tinggi_badan" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginBottom="-50dp"
+    android:src="@drawable/img"
+    app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_kirim"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_marginTop="-30dp"
+    android:background="@drawable/bg_btn_navy"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:text="Kirim"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+  <ProgressBar
+    android:id="@+id/progres_loading"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

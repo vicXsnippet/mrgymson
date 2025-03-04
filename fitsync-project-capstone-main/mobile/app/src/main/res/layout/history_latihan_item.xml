@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="16dp">
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/image_latihan"
+    android:layout_width="94dp"
+    android:layout_height="94dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:shapeAppearanceOverlay="@style/allRoundedSquare"
+    tool:src="@drawable/lenganpemula" />
+
+  <TextView
+    android:id="@+id/tv_nama_latihan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="18dp"
+    android:layout_marginTop="12dp"
+    android:text="@string/lengan_pemula"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@id/image_latihan"
+    app:layout_constraintTop_toTopOf="@id/image_latihan" />
+
+  <TextView
+    android:id="@+id/tv_jam_latihan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/_00_30"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toTopOf="@id/tv_tanggal_latihan"
+    app:layout_constraintStart_toStartOf="@id/tv_nama_latihan" />
+
+  <TextView
+    android:id="@+id/tv_tanggal_latihan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="@id/image_latihan"
+    app:layout_constraintStart_toStartOf="@id/tv_jam_latihan"
+    tool:text="14 Maret" />
+
+  <TextView
+    android:id="@+id/tv_label_durasi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="@string/label_durasi"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="@id/tv_tanggal_latihan"
+    app:layout_constraintStart_toEndOf="@id/tv_tanggal_latihan" />
+
+  <TextView
+    android:id="@+id/tv_value_durasi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    android:text="@string/durasi_latihan"
+    app:layout_constraintBottom_toTopOf="@id/tv_label_durasi"
+    app:layout_constraintStart_toStartOf="@id/tv_label_durasi"
+    tool:text="%s m" />
+
+  <TextView
+    android:id="@+id/tv_label_kalori"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:text="Kkal"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="@id/tv_label_durasi"
+    app:layout_constraintStart_toEndOf="@id/tv_label_durasi" />
+
+  <TextView
+    android:id="@+id/tv_value_kalori"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toTopOf="@id/tv_label_kalori"
+    app:layout_constraintStart_toStartOf="@id/tv_label_kalori"
+    tool:text="60" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

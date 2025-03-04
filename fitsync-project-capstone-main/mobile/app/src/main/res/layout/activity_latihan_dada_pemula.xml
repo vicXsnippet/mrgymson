@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  tools:context=".ui.pemula.LatihanDadaPemulaActivity">
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_Back"
+    style="@style/Widget.Material3.Button.IconButton.Filled"
+    android:layout_width="46dp"
+    android:layout_height="46dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:backgroundTint="@color/white"
+    android:elevation="2dp"
+    app:icon="@drawable/baseline_arrow_back_24"
+    app:iconTint="@color/black"
+    app:layout_constraintStart_toStartOf="@id/otot_dada_ilustration"
+    app:layout_constraintTop_toTopOf="@id/otot_dada_ilustration"
+
+    />
+
+  <ImageView
+    android:id="@+id/otot_dada_ilustration"
+    android:layout_width="match_parent"
+    android:layout_height="291dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/otot_dada_illustration"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/bg_heading"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:alpha="0.5"
+    android:backgroundTint="@color/black"
+    android:elevation="1dp"
+    app:cardCornerRadius="0dp"
+    app:layout_constraintBottom_toBottomOf="@+id/otot_dada_ilustration"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+    android:id="@+id/tv_heading_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="28dp"
+    android:elevation="2dp"
+    android:text="@string/otot_dada_pemula"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@id/bg_heading"
+    app:layout_constraintStart_toStartOf="@id/bg_heading"
+    app:layout_constraintTop_toTopOf="@id/bg_heading" />
+
+  <ImageView
+    android:id="@+id/api_merah_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:elevation="2dp"
+    android:src="@drawable/apimerah"
+    app:layout_constraintBottom_toBottomOf="@id/bg_heading"
+    app:layout_constraintStart_toEndOf="@id/tv_heading_name"
+    app:layout_constraintTop_toTopOf="@id/bg_heading" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="-8dp"
+    android:elevation="2dp"
+    android:text="@string/_126"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@id/api_merah_icon"
+    app:layout_constraintTop_toTopOf="@id/api_merah_icon" />
+
+  <TextView
+    android:id="@+id/tv_value_kalori"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginBottom="-8dp"
+    android:elevation="2dp"
+    android:text="@string/kalori"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@id/api_merah_icon"
+    app:layout_constraintStart_toEndOf="@id/api_merah_icon" />
+
+  <ImageView
+    android:id="@+id/image_jam"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/waktukalorihijau"
+    android:elevation="2dp"
+    app:layout_constraintBottom_toBottomOf="@id/api_merah_icon"
+    app:layout_constraintStart_toEndOf="@id/tv_value_kalori"
+    app:layout_constraintTop_toTopOf="@id/api_merah_icon" />
+
+  <TextView
+    android:id="@+id/tv_timer_value"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="-8dp"
+    android:elevation="2dp"
+    android:text="@string/_12"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@id/image_jam"
+    app:layout_constraintTop_toTopOf="@id/image_jam" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-8dp"
+    android:elevation="2dp"
+    android:text="@string/menit"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="@id/image_jam"
+    app:layout_constraintStart_toStartOf="@id/tv_timer_value" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:scrollbars="none"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/otot_dada_ilustration">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_tricpes_dips"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tricep_dips_gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/allRoundedSquare" />
+
+      <TextView
+        android:id="@+id/tv_situp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/triceps_dips"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_tricpes_dips"
+        app:layout_constraintTop_toTopOf="@id/image_tricpes_dips" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/x_16"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_tricpes_dips"
+        app:layout_constraintStart_toStartOf="@id/tv_situp" />
+
+      <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_cobra_strech"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cobra_stretch_gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_tricpes_dips"
+        app:shapeAppearanceOverlay="@style/allRoundedSquare" />
+
+      <TextView
+        android:id="@+id/tv_legraises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/cobra_stretch"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_cobra_strech"
+        app:layout_constraintTop_toTopOf="@id/image_cobra_strech" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/_00_20"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_cobra_strech"
+        app:layout_constraintStart_toStartOf="@id/tv_legraises" />
+
+      <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/image_diamond_pushup"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/diamond_push_up_gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_cobra_strech"
+        app:shapeAppearanceOverlay="@style/allRoundedSquare" />
+
+      <TextView
+        android:id="@+id/tv_diamond_pushup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/diamond_push_up"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_diamond_pushup"
+        app:layout_constraintTop_toTopOf="@id/image_diamond_pushup" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/x_16"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image_diamond_pushup"
+        app:layout_constraintStart_toStartOf="@id/tv_diamond_pushup" />
+
+      <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/push_up_gif"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/push_up_gif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_diamond_pushup"
+        app:shapeAppearanceOverlay="@style/allRoundedSquare" />
+
+      <TextView
+        android:id="@+id/tv_cobrastretch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/push_up"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/push_up_gif"
+        app:layout_constraintTop_toTopOf="@id/push_up_gif" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/x_16"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/push_up_gif"
+        app:layout_constraintStart_toStartOf="@id/tv_cobrastretch" />
+
+      <Button
+        android:id="@+id/btn_start"
+        android:layout_width="144dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/btn_mulai"
+        android:text="@string/mulai"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/push_up_gif" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

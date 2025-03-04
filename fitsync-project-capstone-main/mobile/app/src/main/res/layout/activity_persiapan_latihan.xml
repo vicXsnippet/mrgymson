@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#7787F4"
+  tools:context=".ui.persiapanlatihan.PersiapanLatihanActivity">
+
+  <TextView
+    android:id="@+id/tv_title_halaman"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:text="@string/persiapan_gerakan"
+    android:textColor="@color/white"
+    android:textSize="36sp"
+    app:layout_constraintBottom_toTopOf="@+id/tv_timer"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btn_lewatkan"
+    android:layout_width="202dp"
+    android:layout_height="67dp"
+    android:backgroundTint="#FF6363"
+    android:text="@string/lewatkan"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    app:cornerRadius="14dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tv_timer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="56dp"
+    android:text="@string/timer"
+    android:textColor="@color/white"
+    android:textSize="64sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@id/btn_lewatkan"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+    android:id="@+id/tv_selanjutnya"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginBottom="8dp"
+    android:text="@string/selanjutnya"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    app:layout_constraintBottom_toTopOf="@id/tv_nama_latihan"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="519dp" />
+
+  <TextView
+    android:id="@+id/tv_nama_latihan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="32dp"
+    android:layout_marginBottom="16dp"
+    android:text="@string/tools_jumping_jack"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@+id/image_next_step"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="554dp" />
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/image_next_step"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/example_next_workout"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:shapeAppearanceOverlay="@style/topCornerRadius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

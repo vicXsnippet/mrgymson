@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/dashboard_color"
+  android:paddingStart="50dp"
+  android:paddingTop="50dp"
+  android:paddingEnd="50dp"
+  tools:context=".ui.opening.Opening">
+
+
+  <ImageView
+    android:id="@+id/iv_opening"
+    android:layout_width="wrap_content"
+    android:layout_height="350dp"
+    android:src="@drawable/opening_image"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <com.iambedant.text.OutlineTextView
+    android:id="@+id/tv_jaga_tubuh_kuat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:fontFamily="@font/roboto_bold"
+    android:text="Jaga tubuh kuat"
+    android:textColor="@color/white"
+    android:textSize="38sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/iv_opening"
+    app:outlineColor="@color/black"
+    app:outlineWidth="1" />
+
+  <TextView
+    android:id="@+id/tv_bersama_kami"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/roboto_bold"
+    android:text="bersama kami"
+    android:textColor="@color/dark_grey"
+    android:textSize="38sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_jaga_tubuh_kuat" />
+
+  <ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/img"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_jaga_tubuh_kuat" />
+
+  <TextView
+    android:id="@+id/tv_nasihat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:fontFamily="@font/roboto_regular"
+    android:text="jika kamu berpikir akan ada kesempatan kedua, kau akan bermalas-malasan"
+    android:textColor="@color/dark_grey"
+    android:textSize="17sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_bersama_kami" />
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/btn_mulai"
+    android:layout_width="140dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/bg_btn_navy"
+    android:text="Mulai"
+    android:textColor="@color/white"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tv_nasihat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

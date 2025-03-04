@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navy">#293241</color>
+    <color name="pink">#FF6363</color>
+    <color name="dark_grey">#222222</color>
+    <color name="apk_name_color">#4B5565</color>
+    <color name="btn_logout">#FC8877</color>
+    <color name="dashboard_color">#F1F5FF</color>
+    <color name="name_quotes">#555555</color>
+    <color name="purple">#7787F4</color>
+    <color name="btn_mulai">#293241</color>
+    <color name="lanjutan_color">#4B5565</color>
+    <color name="bg_tingkatan_latihan">#F1F5FF</color>
+    <color name="red">#FF0000</color>
+
+</resources>
